@@ -1,6 +1,6 @@
-### MVPTest
+### AndroidMVPTest
 
-* 实现一个基于MVP模式的登录DEMO
+* 实现一个基于MVP模式的DEMO
 * [参考原文地址](http://www.jianshu.com/p/9d40b298eca9)
 
 #### demo代码流程：
