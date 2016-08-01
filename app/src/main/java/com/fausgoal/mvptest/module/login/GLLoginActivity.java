@@ -5,10 +5,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.fausgoal.mvptest.R;
 import com.fausgoal.mvptest.base.GLParentActivity;
+import com.fausgoal.mvptest.module.main.GLMainActivity;
 import com.fausgoal.mvptest.module.register.GLRegisterActivity;
 
 /**
@@ -63,7 +63,8 @@ public class GLLoginActivity extends GLParentActivity implements GLLoginView, Vi
 
     @Override
     public void navigateToHome() {
-        Toast.makeText(this, "login success", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, GLMainActivity.class));
+        onBackPressed();
     }
 
     @Override

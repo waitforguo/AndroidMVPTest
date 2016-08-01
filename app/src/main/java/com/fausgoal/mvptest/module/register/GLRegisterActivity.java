@@ -1,5 +1,6 @@
 package com.fausgoal.mvptest.module.register;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -8,6 +9,7 @@ import android.widget.Toast;
 
 import com.fausgoal.mvptest.R;
 import com.fausgoal.mvptest.base.GLParentActivity;
+import com.fausgoal.mvptest.module.main.GLMainActivity;
 
 /**
  * Description：注册界面
@@ -76,7 +78,7 @@ public class GLRegisterActivity extends GLParentActivity implements GLRegisterVi
 
     @Override
     public void navigateToHome() {
-        Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, GLMainActivity.class));
         onBackPressed();
     }
 

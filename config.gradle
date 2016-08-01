@@ -6,10 +6,18 @@ ext {
             minSdkVersion    : 14,
             targetSdkVersion : 24,
             versionCode      : 1,
+
             versionName      : "1.0"
     ]
 
     dependencies = [
-            "appcompat-v7": 'com.android.support:appcompat-v7:24.1.1'
+            "appcompat-v7"   : 'com.android.support:appcompat-v7:24.1.1',
+            "recyclerview-v7": 'com.android.support:recyclerview-v7:24.1.1',
+            "fresco"         : 'com.facebook.fresco:fresco:0.12.0',
+            // 支持 GIF 动图，需要添加
+            "animated-gif"   : 'com.facebook.fresco:animated-gif:0.12.0',
+            // 支持 WebP （静态图+动图），需要添加
+            "animated-webp"  : 'com.facebook.fresco:animated-webp:0.12.0',
+            "webpsupport"    : 'com.facebook.fresco:webpsupport:0.12.0',
     ]
 }
