@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MVPTest</string>
+
+    <string name="str_login">登录</string>
+    <string name="str_username">用户名</string>
+    <string name="str_pwd">密码</string>
+
+    <string name="str_register">注册</string>
+    <string name="str_vcode">验证码</string>
+    <string name="str_phone_hint">输入手机号</string>
+    <string name="str_vcode_hint">输入验证码</string>
 </resources>

@@ -6,5 +6,5 @@ package com.fausgoal.mvptest.module.login;
  * <br/><br/>
  */
 public interface GLLoginModel {
-    void login(String userName, String password, OnLoginFinishedListener listener);
+    void login(String userName, String password, GLOnLoginFinishedListener listener);
 }

@@ -11,7 +11,7 @@ import android.text.TextUtils;
 public class GLLoginModelImpl implements GLLoginModel {
 
     @Override
-    public void login(final String userName, final String password, final OnLoginFinishedListener listener) {
+    public void login(final String userName, final String password, final GLOnLoginFinishedListener listener) {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

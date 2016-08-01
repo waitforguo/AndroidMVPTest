@@ -9,6 +9,4 @@ public interface GLBaseView {
     void showProgress();
 
     void hideProgress();
-
-    void setListener();
 }

@@ -14,7 +14,7 @@
             android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="用户名"
+            android:hint="@string/str_username"
             android:text="@null"/>
 
         <EditText
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:hint="密码"
+            android:hint="@string/str_pwd"
             android:inputType="textPassword"
             android:text="@null"/>
 
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="10dp"
-            android:text="登录"/>
+            android:text="@string/str_login"/>
     </LinearLayout>
 
     <ProgressBar
@@ -41,5 +41,15 @@
         android:layout_height="50dp"
         android:layout_centerInParent="true"
         android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/str_register"/>
 
 </RelativeLayout>

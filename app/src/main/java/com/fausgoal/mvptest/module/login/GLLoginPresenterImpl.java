@@ -1,5 +1,7 @@
 package com.fausgoal.mvptest.module.login;
 
+import com.fausgoal.mvptest.base.GLBasePresenter;
+
 /**
  * Description：1 完成presenter的实现。这里面主要是Model层和View层的交互和操作。
  * <br/> 2  presenter里面还有个OnLoginFinishedListener，
@@ -9,16 +11,13 @@ package com.fausgoal.mvptest.module.login;
  * <br/><br/>Created by Fausgoal on 16/7/30.
  * <br/><br/>
  */
-public class GLLoginPresenterImpl implements GLLoginPresenter, OnLoginFinishedListener {
+public class GLLoginPresenterImpl extends GLBasePresenter implements GLLoginPresenter, GLOnLoginFinishedListener {
     private GLLoginView mLoginView = null;
     private GLLoginModel mLoginModel = null;
 
     public GLLoginPresenterImpl(GLLoginView loginView) {
         this.mLoginView = loginView;
         this.mLoginModel = new GLLoginModelImpl();
-        if (null != mLoginView) {
-            mLoginView.setListener();
-        }
     }
 
     @Override
@@ -31,7 +30,7 @@ public class GLLoginPresenterImpl implements GLLoginPresenter, OnLoginFinishedLi
     }
 
     @Override
-    public void onDestory() {
+    public void onDestroy() {
         mLoginView = null;
     }
 
